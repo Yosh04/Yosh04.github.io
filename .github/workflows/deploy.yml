@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      - name: InciandoWorkflow
+        run: echo 'Hello my friend yosh'
+
       - name: Print Variable Secret
         run: echo "${{secrects.TOKEN_SECRET}}"
 
