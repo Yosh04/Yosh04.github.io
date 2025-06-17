@@ -28,6 +28,9 @@ jobs:
 
       - name: Run test
         run: npm run test
+
+      - name: flag ended
+        run: echo 'he terminado'
       
       
       
