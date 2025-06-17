@@ -32,7 +32,26 @@ jobs:
       - name: flag ended
         run: echo 'he terminado'
       
-      
+    
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+
+    environment:
+      name: github-pages
+      url: ${{steps.deployment-pages.outputs.page_url}}
+
+    steps:
+      - name: deploy
+        id: deployment-pages
+        uses: actions/deploy-pages@v4
+    
+          
       
 
 
