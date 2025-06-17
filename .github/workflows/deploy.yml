@@ -13,7 +13,7 @@ jobs:
         run: echo 'Hello my friend yosh'
 
       - name: Print Variable Secret
-        run: echo "${{secrects.TOKEN_SECRET}}"
+        run: echo "${{secrets.TOKEN_SECRET}}"
 
       - name: checkout
         uses: actions/checkout@v4
@@ -50,8 +50,8 @@ jobs:
       - name: deploy
         id: deployment-pages
         uses: actions/deploy-pages@v4
-    
-          
+
+
       
 
 
