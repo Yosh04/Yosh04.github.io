@@ -1,14 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Código Facilito</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="flex items-center justify-center min-h-screen bg-gray-100">
-  <h1 class="text-4xl font-bold text-center text-gray-800">
-    Bootcamp de GitHub Action en Código Facilito
-  </h1>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heladería Dulce Frío</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+      h1, .logo {
+        font-family: 'Pacifico', cursive;
+      }
+    </style>
+  </head>
+  <body class="bg-pink-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-pink-200 shadow-md p-4">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <div class="logo text-3xl text-pink-600">🍦 Dulce Frío</div>
+        <nav class="space-x-4 text-lg">
+          <a href="#sabores" class="hover:text-pink-600 font-semibold">Sabores</a>
+          <a href="#nosotros" class="hover:text-pink-600 font-semibold">Nosotros</a>
+          <a href="#contacto" class="hover:text-pink-600 font-semibold">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="text-center py-20 bg-gradient-to-b from-pink-100 to-pink-200">
+      <h1 class="text-5xl font-bold text-pink-700 mb-4">¡Disfruta del mejor helado artesanal!</h1>
+      <p class="text-xl text-pink-800 mb-6">Sabores únicos hechos con amor y alegría 🧁✨</p>
+      <a href="#sabores" class="bg-pink-500 text-white px-6 py-3 rounded-full shadow hover:bg-pink-600 transition">Ver menú</a>
+    </section>
+
+    <!-- Sabores -->
+    <section id="sabores" class="max-w-6xl mx-auto py-16 px-4">
+      <h2 class="text-4xl font-bold text-center text-pink-700 mb-12">Nuestros Sabores</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow p-6 text-center">
+          <img src="https://images.unsplash.com/photo-1590080877635-0c54fe7c0640" alt="Fresa" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-pink-600">Fresa con Amor</h3>
+          <p>Fresas naturales y crema batida 🍓</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center">
+          <img src="https://images.unsplash.com/photo-1600891963932-a27a2c50d5d2" alt="Chocolate" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-pink-600">Chocolate Intenso</h3>
+          <p>Cacao puro con pedacitos de brownie 🍫</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center">
+          <img src="https://images.unsplash.com/photo-1589712236469-7b6dbba8a384" alt="Vainilla" class="w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-pink-600">Vainilla Clásica</h3>
+          <p>El sabor que nunca falla 🍨</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="bg-pink-50 py-16 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-pink-700 mb-6">Sobre Nosotros</h2>
+        <p class="text-lg leading-relaxed">
+          En Dulce Frío, creemos que un helado puede cambiar tu día. Desde 2010, elaboramos helados artesanales con ingredientes frescos, sin aditivos ni conservantes. ¡Ven y descubre el sabor de la felicidad!
+        </p>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-16 px-4 bg-pink-100">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-pink-700 mb-4">Contáctanos</h2>
+        <p class="mb-6">¿Tienes preguntas? ¡Estamos aquí para ti!</p>
+        <form class="grid grid-cols-1 gap-4">
+          <input type="text" placeholder="Tu nombre" class="p-3 rounded border border-pink-300" />
+          <input type="email" placeholder="Tu correo" class="p-3 rounded border border-pink-300" />
+          <textarea placeholder="Tu mensaje" class="p-3 rounded border border-pink-300"></textarea>
+          <button type="submit" class="bg-pink-500 text-white px-6 py-3 rounded hover:bg-pink-600 transition">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-200 text-center py-6 mt-10 text-pink-800">
+      © 2025 Heladería Dulce Frío. Todos los derechos reservados.
+    </footer>
+    
+  </body>
 </html>
